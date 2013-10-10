@@ -14,18 +14,11 @@
             
         }, options);
 
-        if(settings.portfolio == true ){
-            $(".stuff h2").hide();
-            $(".stuff span").hide();
-        }
-
-
-
-        $this = $(this); // saves with selector was used.
+       $this = $(this); // saves with selector was used.
 
      
          var hover =
-            $(this).find("a").hover(
+            $this.find("a").hover(
                 function(){
                     var width = $(this).children('img').width() ;
                     $(".stuff").width(width);
