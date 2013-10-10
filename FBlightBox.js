@@ -74,7 +74,7 @@
                         var div ="<div id='LightBox'> ";
                             div += "<div id='container' style=' width: " + imgWidth + "px;'>";
                             div += "<div id='mainContent'>";
-                            div += "<div id='close'>X</div>";
+                            div += "<a><div id='close'>X</div></a>";
                             div += "<div id='left'>"
                             div += "<img src='" + img + "'>";
                             div += "</div>";
