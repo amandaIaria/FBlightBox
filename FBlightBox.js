@@ -55,8 +55,8 @@
                         
                         var imgHeight = $("#loadimage").children('img');
                         
-                        var imgWidth = imgHeight.width() + 200 ;
-                        var imgHeight = imgHeight.height();
+                        var imgWidth = imgHeight.width() ;
+                      
 
                         console.log(imgWidth + " " + imgHeight)
                     
