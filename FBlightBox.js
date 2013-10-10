@@ -48,9 +48,20 @@
                 var img = $(this).attr("href");
                                 
                 if(settings.type == "gallery"){
+                     $("#loadimage").html("");
+                        $("#loadimage").html("<img src='" + img + "'>")
+                        
+                        var port = $(this).find(".stuff").html();
+                        
+                        var imgHeight = $("#loadimage").children('img');
+                        
+                        var imgWidth = imgHeight.width() + 200 ;
+                        var imgHeight = imgHeight.height();
+
+                        console.log(imgWidth + " " + imgHeight)
                     
                     var div ="<div id='LightBox'> ";
-                        div += "<div id='container'>";
+                        div += "<div id='container' style=' width: " + imgWidth + "px;'>";
                         div += "<div id='mainContent'>";
                         div += "<div id='close'>X</div>";
                         div += "<img src='" + img + "'>";
@@ -69,7 +80,7 @@
                         var imgWidth = imgHeight.width() + 200 ;
                         var imgHeight = imgHeight.height();
 
-                        console.log(imgWidth + " " + imgHeight)
+                        //console.log(imgWidth + " " + imgHeight)
                         
                         var div ="<div id='LightBox'> ";
                             div += "<div id='container' style=' width: " + imgWidth + "px;'>";
