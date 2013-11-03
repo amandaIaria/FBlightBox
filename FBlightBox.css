@@ -5,6 +5,9 @@
 #left{float:left}
 #right{float:right;background:#fff;color:#333;padding:20px;width:200px}#right h2{text-align:center}
 #right h2{font-size:22px;color:#86c8bc}
-.portfolio ul{list-style:none}.portfolio ul li{margin:20px;display:inline}.portfolio ul li a{display:inline-block}.portfolio ul li a .stuff{background:rgba(0,0,0,0.5);bottom:0;position:absolute}.portfolio ul li a .stuff h2{display:none}
+.portfolio ul{list-style:none}.portfolio ul li{margin:20px;display:inline}.portfolio ul li a{display:inline-block}
+.portfolio ul li a .here{position: relative;
+}
+.portfolio ul li a .stuff{background:rgba(0,0,0,0.5);bottom:0px;position:absolute;}.portfolio ul li a .stuff h2{display:none; }
 .portfolio ul li a .stuff span{display:none}
 #loadimage{position:absolute;left:-1000px;top:0}

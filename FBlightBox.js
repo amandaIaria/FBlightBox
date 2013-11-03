@@ -20,7 +20,7 @@
          var hover =
             $this.find("a").hover(
                 function(){
-                    var width = $(this).children('img').width() ;
+                    var width = $(this).children('img').width() + 10 ;
                     $(".stuff").width(width);
                     if(settings.transitionsOn == true){
                         $(this).find("h2").show(settings.transitionSpeed);
