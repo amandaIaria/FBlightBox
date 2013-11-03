@@ -13,4 +13,25 @@ I wanted to have something that looked like Facebook's lightbox, but that could 
 
 The Doc can be found at http://webdevnerd.tumblr.com/post/63644869695/justanotherlighbox-plugin-doc.
 
+update: HTML should be set up like this for the portfolio option:
+
+
+<div class=”portfolio”>
+    <ul>
+		<li>
+            <a href=”http://placehold.it/400x400”>
+                <img src=”http://placehold.it/200x200”>
+                <div class="here">
+                	<div class=”stuff”>
+                        <h2>Stuff1</h2>
+                        <span>
+                            stuff
+                        </span>
+                    </div>
+                </div>
+			</a>
+        </li>
+    </ul> 
+</div>
+
 
