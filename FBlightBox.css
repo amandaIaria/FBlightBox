@@ -5,7 +5,7 @@
 #left{float:left}
 
 #right{float:right;background:#fff;color:#333;padding:20px;width:200px; max-height:500px; height:500px;}
-#innards{overflow-y:scroll}
+#innards{height:450px;overflow-y:scroll}
 
 #right h2{text-align:center;font-size:22px;color:#86c8bc}
 
@@ -19,6 +19,11 @@
 .portfolio ul li a .stuff{background:rgba(0,0,0,0.5);bottom:0px;position:absolute;}.portfolio ul li a .stuff h2{display:none; }
 .portfolio ul li a .stuff span{display:none}
 #loadimage{position:absolute;left:-10000px;top:0; height:100%; width:99%;max-height: 500px;max-width : 500px;}
-#leftCont{background: rgba(0,0,0,0.5); height:500px; width: 499px; float: left; }
-#leftBig{ width: 499px; max-height: 500px; text-align: center;}
-#leftBig img{ max-width : 499px; max-height:500px; padding:5px; }
+#leftCont{background: rgba(0,0,0,0.5); height:500px; width: 499px; float: left; text-align: center; position: relative;}
+
+#leftBig img{ max-width : 499px; max-height:500px; padding:5px;  position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;  }

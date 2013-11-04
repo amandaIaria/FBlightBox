@@ -85,8 +85,6 @@
                         $("#loadimage").html("");
 
                         $("#loadimage").html("<img src='" + img + "'>");
-
-                        //img = $().attr("src");
                         
                         var port = $(this).find(".stuff").html();
                         
@@ -102,7 +100,7 @@
                             div += "<div id='mainContent'>";
                             div += "<div id='close'>X</div>";
                             div += "<div id='leftCont'>"
-                            div += "<div id='leftBig'> <span class='helper'></span>"
+                            div += "<div id='leftBig'> "
                             div += "<img src='" + img + "' id='imageBig' height='100'>";
                             div += "</div>";
                              div += "</div>";
