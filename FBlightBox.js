@@ -59,42 +59,62 @@
                       
 
                         console.log(imgWidth + " " + imgHeight)
-                    
-                    var div ="<div id='LightBox'> ";
-                        div += "<div id='container' style=' width: " + imgWidth + "px;'>";
-                        div += "<div id='mainContent'>";
-                        div += "<div id='close'>X</div>";
-                        div += "<img src='" + img + "'>";
-                        div += "</div>";
-                        div += "</div>";
-                        div += "</div>";
+                        if(imgWidth >= 500){
+                            var div ="<div id='LightBox'> ";
+                                div += "<div id='container' style=' width: 500px;'>";
+                                div += "<div id='mainContent'>";
+                                div += "<div id='close'>X</div>";
+                                div += "<img src='" + img + "' width='500'>";
+                                div += "</div>";
+                                div += "</div>";
+                                div += "</div>";
+                        }
+                   
+                        else{
+                             var div ="<div id='LightBox'> ";
+                                div += "<div id='container' style=' width: " + imgWidth + "px;'>";
+                                div += "<div id='mainContent'>";
+                                div += "<div id='close'>X</div>";
+                                div += "<img src='" + img + "'>";
+                                div += "</div>";
+                                div += "</div>";
+                            div += "</div>";
+                        }
                 }
                 else{
                         $("#loadimage").html("");
-                        $("#loadimage").html("<img src='" + img + "'>")
+
+                        $("#loadimage").html("<img src='" + img + "'>");
+
+                        //img = $().attr("src");
                         
                         var port = $(this).find(".stuff").html();
                         
                         var imgHeight = $("#loadimage").children('img');
                         
-                        var imgWidth = imgHeight.width() + 200 ;
-                        var imgHeight = imgHeight.height();
+                        var imgWidth = imgHeight.width + 200 ;
+                        var imgHeight1 = imgHeight.height;
 
                         //console.log(imgWidth + " " + imgHeight)
-                        
-                        var div ="<div id='LightBox'> ";
-                            div += "<div id='container' style=' width: " + imgWidth + "px;'>";
+                  
+                       var div ="<div id='LightBox'> ";
+                            div += "<div id='container' style=' width:700px;' >";
                             div += "<div id='mainContent'>";
                             div += "<div id='close'>X</div>";
-                            div += "<div id='left'>"
-                            div += "<img src='" + img + "'>";
+                            div += "<div id='leftCont'>"
+                            div += "<div id='leftBig'> <span class='helper'></span>"
+                            div += "<img src='" + img + "' id='imageBig' height='100'>";
                             div += "</div>";
-                            div += "<div id= 'right' style=' height: " + imgHeight + "px;'>" ; 
+                             div += "</div>";
+                            div += "<div id= 'right'>" ;
+                            div += "<div id= 'innards'>" ; 
                             div +=  port ;
+                            div += "</div>"
                             div +="</div>";
                             div += "</div>";
                             div += "</div>";
-                        div += "</div>";
+                            div += "</div>";
+                   
 
                 }
                 

@@ -1,13 +1,24 @@
 #LightBox{height:100%;width:100%;background:rgba(0,0,0,0.6);z-index:1000;position:fixed;top:0}
 #close{background:none repeat scroll 0 0 #333;border-radius:50% 50% 50% 50%;color:#fff;font-size:15px;height:30px;margin:-10px auto auto -10px;padding:4px;position:absolute;text-align:center;width:30px;z-index:1002}
-#container{top:20%;position:relative;width:500px;margin:auto}
-#mainContent{height:100%;margin:auto;position:relative;width:100%;-moz-box-shadow:0 0 16px #000;-webkit-box-shadow:0 0 16px #000;box-shadow:0 0 16px #000}#mainContent img{height:80%;text-align:center}
+#container{position:relative;width:500px;margin:auto}
+#mainContent{top:50px;height:100%;margin:auto;position:relative;width:100%;-moz-box-shadow:0 0 16px #000;-webkit-box-shadow:0 0 16px #000;box-shadow:0 0 16px #000}#mainContent img{height:80%;text-align:center}
 #left{float:left}
-#right{float:right;background:#fff;color:#333;padding:20px;width:200px}#right h2{text-align:center}
-#right h2{font-size:22px;color:#86c8bc}
+
+#right{float:right;background:#fff;color:#333;padding:20px;width:200px; max-height:500px; height:500px;}
+#innards{overflow-y:scroll}
+
+#right h2{text-align:center;font-size:22px;color:#86c8bc}
+
 .portfolio ul{list-style:none}.portfolio ul li{margin:20px;display:inline}.portfolio ul li a{display:inline-block}
-.portfolio ul li a .here{position: relative;
+.portfolio ul li a .here{position: relative;}
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }
 .portfolio ul li a .stuff{background:rgba(0,0,0,0.5);bottom:0px;position:absolute;}.portfolio ul li a .stuff h2{display:none; }
 .portfolio ul li a .stuff span{display:none}
-#loadimage{position:absolute;left:-1000px;top:0}
+#loadimage{position:absolute;left:-10000px;top:0; height:100%; width:99%;max-height: 500px;max-width : 500px;}
+#leftCont{background: rgba(0,0,0,0.5); height:500px; width: 499px; float: left; }
+#leftBig{ width: 499px; max-height: 500px; text-align: center;}
+#leftBig img{ max-width : 499px; max-height:500px; padding:5px; }
