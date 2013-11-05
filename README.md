@@ -15,7 +15,7 @@ The Doc can be found at http://webdevnerd.tumblr.com/post/63644869695/justanothe
 
 update: HTML should be set up like this for the portfolio option:
 
-<code>
+```html
 <div class=”portfolio”>
     <ul>
 		<li>
@@ -34,4 +34,4 @@ update: HTML should be set up like this for the portfolio option:
     </ul> 
 </div>
 </code>
-
+```
