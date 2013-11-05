@@ -15,7 +15,7 @@ The Doc can be found at http://webdevnerd.tumblr.com/post/63644869695/justanothe
 
 update: HTML should be set up like this for the portfolio option:
 
-
+<code>
 <div class=”portfolio”>
     <ul>
 		<li>
@@ -24,14 +24,14 @@ update: HTML should be set up like this for the portfolio option:
                 <div class="here">
                 	<div class=”stuff”>
                         <h2>Stuff1</h2>
-                        <span>
+                        <div>
                             stuff
-                        </span>
+                        </div>
                     </div>
                 </div>
 			</a>
         </li>
     </ul> 
 </div>
-
+</code>
 
