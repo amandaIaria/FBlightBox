@@ -33,5 +33,5 @@ update: HTML should be set up like this for the portfolio option:
         </li>
     </ul> 
 </div>
-</code>
+
 ```
