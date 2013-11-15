@@ -26,6 +26,8 @@ update: HTML should be set up like this for the portfolio option:
                         <h2>Stuff1</h2>
                         <div>
                             stuff
+                            <span onclick="document.location.href = 'Yourlink';'">Your Link</span>
+                            Due to this being a link within a link (In order to make the whole area clickable) you have to do it this. 
                         </div>
                     </div>
                 </div>

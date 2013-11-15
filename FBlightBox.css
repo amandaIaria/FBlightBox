@@ -13,3 +13,5 @@
 #loadimage{position:absolute;left:-10000px;top:0; height:100%; width:99%;max-height: 500px;max-width : 500px;}
 #leftCont{background: rgba(0,0,0,0.5); height:500px; width: 499px; float: left; text-align: center; position: relative;}
 #leftBig img{ max-width : 499px; max-height:500px; padding:5px;  position: absolute; top: 0; bottom: 0; left: 0;  right: 0;  margin: auto;  }
+#LightBox span{color:#00EBFF;}
+#LightBox span:hover{color:#00EBFF; text-decoration: underline;}
