@@ -56,13 +56,18 @@
                         var imgHeight = $("#loadimage").children('img');
                         
                         var imgWidth = imgHeight.width() ;
+
+                        var windowHeight= $(window).height();
+                        var picHeight = imgHeight.height();
+                        var space = parseInt(windowHeight - picHeight);
+                        var topSpace = parseInt(space/2);
                       
 
                         console.log(imgWidth + " " + imgHeight)
                         if(imgWidth >= 500){
                             var div ="<div id='LightBox'> ";
                                 div += "<div id='container' style=' width: 500px;'>";
-                                div += "<div id='mainContent'>";
+                                div += "<div id='mainContent' style='top : "+topSpace+"px'>";
                                 div += "<div id='close'>X</div>";
                                 div += "<img src='" + img + "' width='500'>";
                                 div += "</div>";
@@ -73,7 +78,7 @@
                         else{
                             var div ="<div id='LightBox'> ";
                                 div += "<div id='container' style=' width: " + imgWidth + "px;'>";
-                                div += "<div id='mainContent'>";
+                                div += "<div id='mainContent' style='top : "+topSpace+"px'>";
                                 div += "<div id='close'>X</div>";
                                 div += "<img src='" + img + "'>";
                                 div += "</div>";
@@ -96,13 +101,13 @@
                         //console.log(imgWidth + " " + imgHeight)
 
                         var windowHeight= $(window).height();
-                        var picHeight = imgHeight.height;
-                        var space = parseInt(windowHeight - picHeight);
+                        
+                        var space = parseInt(windowHeight - 500);
                         var topSpace = parseInt(space/2);
                   
                        var div ="<div id='LightBox'> ";
                             div += "<div id='container' style=' width:700px;' >";
-                            div += "<div id='mainContent' style='top = "+topSpace+"px'>";
+                            div += "<div id='mainContent' style='top : "+topSpace+"px'>";
                             div += "<div id='close'>X</div>";
                             div += "<div id='leftCont'>"
                             div += "<div id='leftBig'> "
