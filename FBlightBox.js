@@ -94,10 +94,15 @@
                         var imgHeight1 = imgHeight.height;
 
                         //console.log(imgWidth + " " + imgHeight)
+
+                        var windowHeight= $(window).height();
+                        var picHeight = imgHeight.height;
+                        var space = parseInt(windowHeight - picHeight);
+                        var topSpace = parseInt(space/2);
                   
                        var div ="<div id='LightBox'> ";
                             div += "<div id='container' style=' width:700px;' >";
-                            div += "<div id='mainContent'>";
+                            div += "<div id='mainContent' style='top = "+topSpace+"px'>";
                             div += "<div id='close'>X</div>";
                             div += "<div id='leftCont'>"
                             div += "<div id='leftBig'> "
@@ -116,13 +121,16 @@
 
                 }
                 
-                $("body").append(div)
+                $("body").append(div);
+                 
+
                 $("#LightBox").click(function(){
                     $(this).remove();
                 });
                 $("#close").click(function(){
                     $(this).remove();
                 });
+               
                 
             }) // /click
         
@@ -131,6 +139,7 @@
             click;
 
         }) // /each
+
      
      }; // /fblightbox
 

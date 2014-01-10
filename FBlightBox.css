@@ -1,7 +1,7 @@
-#LightBox{height:100%;width:100%;background:rgba(0,0,0,0.6);z-index:1000;position:fixed;top:0}
+#LightBox{height:100%;width:100%;background:rgba(0,0,0,0.6);z-index:1000;position:fixed;top:0;  transition: all 1s ease;}
 #close{background:none repeat scroll 0 0 #333;border-radius:50% 50% 50% 50%;color:#fff;font-size:15px;height:30px;margin:-10px auto auto -10px;padding:4px;position:absolute;text-align:center;width:30px;z-index:1002}
 #container{position:relative;width:500px;margin:auto}
-#mainContent{top:50px;height:500px;margin:auto;position:relative;width:100%;-moz-box-shadow:0 0 16px #000;-webkit-box-shadow:0 0 16px #000;box-shadow:0 0 16px #000}#mainContent img{height:80%;text-align:center}
+#mainContent{max-height:500px;margin:auto;position:relative;width:100%;-moz-box-shadow:0 0 16px #000;-webkit-box-shadow:0 0 16px #000;box-shadow:0 0 16px #000}#mainContent img{height:80%;text-align:center}
 #left{float:left}
 #right{float:right;background:#fff;color:#333;padding:20px;width:200px; max-height:500px; height:500px;}
 #innards{height:450px;overflow-y:scroll}
