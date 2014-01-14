@@ -62,12 +62,15 @@
                         var space = parseInt(windowHeight - picHeight);
                         var topSpace = parseInt(space/2);
                       
+                        var ww = ($(window).width() <= 480 ) ? 0 : 500;
 
+                        var ww1 = ($(window).width() <= 480 ) ? 300 : 700;
+                        
                         console.log(imgWidth + " " + imgHeight)
                         if(imgWidth >= 500){
                             var div ="<div id='LightBox'> ";
-                                div += "<div id='container' style=' width: 500px;'>";
-                                div += "<div id='mainContent' style='top : "+topSpace+"px'>";
+                                div += "<div id='container' style=' width: "+ww+"px;'>";
+                                div += "<div id='mainContent' class='imageLone' style='top : "+topSpace+"px'>";
                                 div += "<div id='close'>X</div>";
                                 div += "<img src='" + img + "' width='500'>";
                                 div += "</div>";
@@ -78,7 +81,7 @@
                         else{
                             var div ="<div id='LightBox'> ";
                                 div += "<div id='container' style=' width: " + imgWidth + "px;'>";
-                                div += "<div id='mainContent' style='top : "+topSpace+"px'>";
+                                div += "<div id='mainContent' class='imageLone' style='top : "+topSpace+"px'>";
                                 div += "<div id='close'>X</div>";
                                 div += "<img src='" + img + "'>";
                                 div += "</div>";
@@ -104,9 +107,11 @@
                         
                         var space = parseInt(windowHeight - 500);
                         var topSpace = parseInt(space/2);
+
+
                   
                        var div ="<div id='LightBox'> ";
-                            div += "<div id='container' style=' width:700px;' >";
+                            div += "<div id='container' style=' width:"+ww1+"px;' >";
                             div += "<div id='mainContent' style='top : "+topSpace+"px'>";
                             div += "<div id='close'>X</div>";
                             div += "<div id='leftCont'>"
@@ -119,6 +124,7 @@
                             div +=  port ;
                             div += "</div>"
                             div +="</div>";
+                            div += "<div class='clear'></div>";
                             div += "</div>";
                             div += "</div>";
                             div += "</div>";
