@@ -64,7 +64,6 @@
                       
                         var ww = ($(window).width() <= 480 ) ? 0 : 500;
 
-                        var ww1 = ($(window).width() <= 480 ) ? 300 : 700;
                         
                         console.log(imgWidth + " " + imgHeight)
                         if(imgWidth >= 500){
@@ -108,7 +107,8 @@
                         var space = parseInt(windowHeight - 500);
                         var topSpace = parseInt(space/2);
 
-
+                        
+                        var ww1 = ($(window).width() <= 480 ) ? 300 : 700;
                   
                        var div ="<div id='LightBox'> ";
                             div += "<div id='container' style=' width:"+ww1+"px;' >";
